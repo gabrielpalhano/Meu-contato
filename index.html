@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="imagens/Icojam-Onebit-4-Holiday-palm-isle.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/9732a7b451.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap" rel="stylesheet">
+    <title>Gabriel Palhano</title>
+</head>
+<body>
+    <header>
+        <nav class="ml">
+            <div class="logo">
+                <img src="imagens/Plants-Palm-Tree-icon2.png" alt="">
+            </div>
+            
+            <ul class="contato">
+                <li> <a href="https://github.com/gabrielpalhano" target="_blank" rel="external"> Github </a> </li>
+
+                <li> <a href="mailto:gabrielpalhano.dev@gmail.com" target="_blank" rel="external"> Email </a> </li>
+
+                <li> <a href="https://www.instagram.com/el_palhano/" target="_blank" rel="external"> Instagram </a> </li>
+
+                <!-- <li> <a href="https://wa.me/xxx96298xx9" target="_blank" rel="external">Me chama no zap!</a> </li> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1 class="titulo">Gabriel Palhano</h1>
+                <h5 class="subtitulo">Aspirante a Dev Full Stack!</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow"> 
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="sobre">
+                <p class="about">
+                    Olá, eu me chamo Gabriel, tenho 24 anos e estou cursando Análise e desenvolvimento de sistemas, visando me tornar um desenvolvedor fullstack!
+                </p>
+            </div>
+
+            <div class="form">
+                <span>
+                    <p> Deixe seu contato! </p>
+                </span>
+
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button> enviar </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+
+            var display = document.getElementById('sobre');
+            display.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
