@@ -1,0 +1,296 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    color: #a09038;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 7px;
+}
+
+.ml {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    background-color: #a09038;
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    cursor: pointer;
+    justify-content: flex-start;
+    
+}
+
+.logo img:hover {
+    background-color: #d6ba1b;
+    transition: 400ms;
+}
+
+.contato {
+    list-style-type: none;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+   
+}
+
+.contato a {
+    text-decoration: none;
+    padding: 6px;
+    transition: 400ms;
+    
+}
+
+.contato a:hover {
+    color: #d6ba1b;
+    /* text-decoration: underline; */
+    
+}
+
+body {
+    height: 100vh;
+    /* background-image: url(imagens/fundo01.jpg);
+    background-repeat: no-repeat;
+    background-position: center top; */
+    background: url(imagens/fundo01.jpg) no-repeat center top fixed;
+    background-size: cover;
+    
+}
+
+.container {
+    text-align: center;
+}
+
+.titulo {
+    font-size:  45px;
+}
+
+.subtitulo {
+    font-size: 22px;
+}
+
+#arrow {
+    font-size: 33px;
+    cursor: pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.active {
+    display: block !important;
+}
+
+.about {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.fomr {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form span p {
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+.form input {
+    width: 25%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+
+.form button {
+    width: 7%;
+    padding: 5px 10px;
+    background: linear-gradient(to right, #d6ba1b 50%, #b49d17 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: white;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-top: 10px;
+    margin-left: -5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.form button:hover {
+    background-position: left bottom;
+    
+
+}
+
+@media only screen and (max-width: 850px){
+    .titulo {
+        font-size:  35px;
+    }
+    
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    #arrow {
+        font-size: 25px;
+    }
+
+    .about {
+        max-width: 80%;
+        font-size: 13px;
+    }
+
+    .form span p {
+        font-size: 15px;
+    }
+
+    .form input {
+        width: 40%;
+    }
+
+    .form button {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .logo img {
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .contato {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .contato a {
+        font-size: 18px;
+        padding: 4px;
+    }
+
+ 
+
+    .titulo {
+        font-size:  28px;
+    }
+    
+    .subtitulo {
+        font-size: 13px;
+    }
+
+    #arrow {
+        font-size: 25px;
+    }
+
+    .about {
+        max-width: 80%;
+        font-size: 15px;
+    }
+
+    .form span p {
+        font-size: 15px;
+    }
+
+    .form input {
+        width: 40%;
+    }
+
+    .form button {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 355px) {
+    .about {
+        max-width: 80%;
+        font-size: 12px;
+    }
+
+    .form span p {
+        font-size: 15px;
+    }
+
+    .form input {
+        width: 50%;
+    }
+
+    .form button {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .logo img {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .contato {
+        display: flex;
+        align-items: flex-end;
+        
+    }
+
+    .contato a {
+        font-size: 15px;
+        padding: 3px;
+        justify-content: flex-end;
+    }
+
+    .titulo {
+        font-size:  25px;
+    }
+    
+    .subtitulo {
+        font-size: 12px;
+    }
+
+    .about {
+        max-width: 80%;
+        font-size: 8px;
+    }
+
+    #arrow {
+        font-size: 20px;
+    }
+
+    .form span p {
+        font-size: 12px;
+    }
+
+    .form input {
+        width: 50%;
+    }
+
+    .form button {
+        width: 25%;
+    }
+}
